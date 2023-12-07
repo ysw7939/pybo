@@ -14,6 +14,7 @@ class Question(models.Model):
     modify_date = models.DateTimeField(null=True, blank=True)
     voter = models.ManyToManyField(User, related_name='voter_question')  # 추천인 추가
 
+
     # id값대신 suject를 리턴하게 해줌
     def __str__(self):
         return self.subject
