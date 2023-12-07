@@ -10,7 +10,7 @@ class Question(models.Model):
     content = models.TextField()
     # 날짜 DateTimeFiled를 사용
     create_date = models.DateTimeField()
-    
+    imgfile = models.ImageField(null=True, upload_to="static/", blank=True) # 이미지 컬럼 추가
     modify_date = models.DateTimeField(null=True, blank=True)
     voter = models.ManyToManyField(User, related_name='voter_question')  # 추천인 추가
 
