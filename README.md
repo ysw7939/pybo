@@ -1,3 +1,5 @@
+# 커밋 컨밴션
+
 <유형>(<범위>): <메시지>
 
 유형:
@@ -18,6 +20,7 @@
 - 두 번째 줄은 비어두고, 세 번째 줄부터 자세한 내용 작성 (선택)
 
 예시:
+```
 feat(user-auth): add user authentication feature
 fix(bug-report): resolve issue with login button
 docs(readme): update installation instructions
@@ -25,3 +28,4 @@ style(css): format code according to style guide
 refactor(api): improve error handling in API calls
 test(login): add unit tests for login functionality
 chore(build): update dependencies in build process
+```
